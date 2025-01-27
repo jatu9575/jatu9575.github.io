@@ -5,15 +5,15 @@ c.style.width = c.width = window.innerWidth;
 c.style.height = c.height = window.innerHeight;
 
 // Определите параметры шестиугольника
-const hexRadius = 5; // Радиус шестиугольника
+const hexRadius = 10; // Радиус шестиугольника
 const hexHeight = Math.sqrt(3) * hexRadius; // Высота шестиугольника
 
 const palette = [
-  '#003049',
-  '#d62828',
-  '#f77f00',
-  '#fcbf49',
-  '#eae2b7',
+  '#EE4680',
+  '#F7FA14',
+  '#F2D550',
+  '#F1872E',
+  '#312B7A',
 ]
 
 const makeCtx = (w, h) => {
@@ -136,8 +136,8 @@ drawTruchetTile(hexHeight / 2, hexRadius, 2, tile2Ctx);
 const drawGrid = (c, r, cols, rows, get) => {
   for (let row = r; row < rows; row++) {
     for (let col = c; col < cols; col++) {
-      const x = Math.floor(col * hexHeight + (row % 2) * hexRadius * 0.85);
-      const y = Math.floor(row * (hexRadius * 1.5));
+      const x = Math.floor(col * hexHeight * .9 + (row % 2) * hexRadius * 0.90);
+      const y = Math.floor(row * (hexRadius * 1.2));
       const variation = Math.floor(Math.random() * 2); // Случайный вариант
 
       ctx.resetTransform();
