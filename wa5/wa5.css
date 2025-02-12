@@ -1,0 +1,33 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-image {
+    position: absolute;
+    width: 100px;  
+    height: auto;
+}
+
+.bottom-left {
+    bottom: 30px;
+    left: 30px;
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.5));
+
+}
+
+.bottom-right {
+    bottom: 50px;
+    right: 50px;
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.5));
+}
