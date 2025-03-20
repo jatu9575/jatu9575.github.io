@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        .box {
+            background-color: olive;
+            border: 5px  solid red;
+            height: 200px;
+            width: 200px;
+            margin-top: 20px;
+
+        }
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: hotpink;
+        }
+        button  {
+            background-color: rgb(244, 244, 77);
+            border: 5px  solid rgb(16, 8, 54);
+            height: 50px;
+            width: 100px;
+            margin-top: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="name">Hello!</h1>
+    <button>click me!</button>
+    <div class = "box"></div>
+    <script>
+        let box = document.querySelector('.box');
+        box.addEventListener('click', changeColor);
+
+
+        function changeColor() {
+            box.style.backgroundImage = "url('https://t3.ftcdn.net/jpg/02/95/44/22/240_F_295442295_OXsXOmLmqBUfZreTnGo9PREuAPSLQhff.jpg')";
+            box.style.backgroundSize = "auto";   
+            box.style.backgroundPosition = "-100px center";  
+        }
+
+        console.log('Hello World!');
+        let btn = document.querySelector('button');
+        //varr btn
+        //const btn
+        btn.addEventListener('click', updateName);
+
+        function updateName() {
+            //console.log('test');
+            let name = document.querySelector('.name');
+            const input = prompt('what is your zodiac sign');
+            name.textContent = input;
+        }
+    </script>
+</body>
+</html>
