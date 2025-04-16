@@ -107,9 +107,7 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
-// loop 
 function loop() {
-  // background fade effect
   ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
   ctx.fillRect(0, 0, width, height);
 
